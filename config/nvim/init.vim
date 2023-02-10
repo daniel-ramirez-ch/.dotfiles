@@ -62,3 +62,5 @@ nnoremap <silent> <leader>ldp <Plug>(coc-diagnostic-prev)
 
 " don't show buffer number
 let g:bufferline_show_bufnr = 0
+
+set clipboard+=unnamedplus
