@@ -64,3 +64,5 @@ nnoremap <silent> <leader>ldp <Plug>(coc-diagnostic-prev)
 let g:bufferline_show_bufnr = 0
 
 set clipboard+=unnamedplus
+
+set colorcolumn=100
