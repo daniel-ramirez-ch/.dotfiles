@@ -88,17 +88,17 @@ local config = {
             bg = "#1e222a",
         },
         highlights = function(hl) -- or a function that returns a new table of colors to set
-          local C = require "default_theme.colors"
+            local C = require "default_theme.colors"
 
-          hl.Normal = { fg = C.fg, bg = C.bg }
+            hl.Normal = { fg = C.fg, bg = C.bg }
 
-          -- New approach instead of diagnostic_style
-          hl.DiagnosticError.italic = true
-          hl.DiagnosticHint.italic = true
-          hl.DiagnosticInfo.italic = true
-          hl.DiagnosticWarn.italic = true
+            -- New approach instead of diagnostic_style
+            hl.DiagnosticError.italic = true
+            hl.DiagnosticHint.italic = true
+            hl.DiagnosticInfo.italic = true
+            hl.DiagnosticWarn.italic = true
 
-          return hl
+            return hl
         end,
         -- enable or disable highlighting for extra plugins
         plugins = {
@@ -234,18 +234,18 @@ local config = {
         },
         -- All other entries override the require("<key>").setup({...}) call for default plugins
         ["null-ls"] = function(config) -- overrides `require("null-ls").setup(config)`
-          -- config variable is the default configuration table for the setup function call
-          -- local null_ls = require "null-ls"
+            -- config variable is the default configuration table for the setup function call
+            -- local null_ls = require "null-ls"
 
-          -- Check supported formatters and linters
-          -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
-          -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
-          config.sources = {
-              -- Set a formatter
-              -- null_ls.builtins.formatting.stylua,
-              -- null_ls.builtins.formatting.prettier,
-          }
-          return config -- return final config table
+            -- Check supported formatters and linters
+            -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
+            -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
+            config.sources = {
+                -- Set a formatter
+                -- null_ls.builtins.formatting.stylua,
+                -- null_ls.builtins.formatting.prettier,
+            }
+            return config -- return final config table
         end,
         treesitter = { -- overrides `require("treesitter").setup(...)`
             -- ensure_installed = { "lua" },
@@ -261,6 +261,13 @@ local config = {
         ["mason-nvim-dap"] = { -- overrides `require("mason-nvim-dap").setup(...)`
             -- ensure_installed = { "python" },
         },
+        ["neo-tree"] = {
+            filesystem = {
+                filtered_items = {
+                    visible = true,
+                },
+            }
+        }
     },
     -- LuaSnip Options
     luasnip = {
@@ -332,18 +339,18 @@ local config = {
     -- augroups/autocommands and custom filetypes also this just pure lua so
     -- anything that doesn't fit in the normal config locations above can go here
     polish = function()
-      -- Set up custom filetypes
-      -- vim.filetype.add {
-      --   extension = {
-      --     foo = "fooscript",
-      --   },
-      --   filename = {
-      --     ["Foofile"] = "fooscript",
-      --   },
-      --   pattern = {
-      --     ["~/%.config/foo/.*"] = "fooscript",
-      --   },
-      -- }
+        -- Set up custom filetypes
+        -- vim.filetype.add {
+        --   extension = {
+        --     foo = "fooscript",
+        --   },
+        --   filename = {
+        --     ["Foofile"] = "fooscript",
+        --   },
+        --   pattern = {
+        --     ["~/%.config/foo/.*"] = "fooscript",
+        --   },
+        -- }
     end,
 }
 
