@@ -1,6 +1,30 @@
 {
-    "workbench.colorTheme": "Default Dark+",
+    "terminal.integrated.scrollback": 100000,
+    "editor.rulers": [
+        100,
+    ],
+    "workbench.colorTheme": "Ayu Dark Bordered",
     "security.workspace.trust.untrustedFiles": "open",
     "git.openRepositoryInParentFolders": "always",
-    "window.menuBarVisibility": "toggle"
+    "window.menuBarVisibility": "toggle",
+    "editor.inlineSuggest.enabled": true,
+    "workbench.startupEditor": "none",
+    "editor.formatOnSave": true,
+    // Use VictorMono Nerd Font 18 for editor and 16 for terminal
+    "editor.fontFamily": "VictorMono Nerd Font",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 18,
+    "terminal.integrated.fontFamily": "VictorMono Nerd Font",
+    "terminal.integrated.fontSize": 16,
+    // Bracket Pair Colorizer
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false
+    },
+    "explorer.confirmDragAndDrop": false,
+    "window.zoomLevel": -1,
 }
