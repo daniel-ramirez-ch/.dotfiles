@@ -20,11 +20,13 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": "active",
     "github.copilot.enable": {
-        "*": true,
+        "*": false,
         "yaml": false,
         "plaintext": false,
-        "markdown": false
+        "markdown": false,
+        "scminput": false
     },
     "explorer.confirmDragAndDrop": false,
     "window.zoomLevel": -1,
+    "vim.useCtrlKeys": false,
 }
