@@ -3,7 +3,7 @@
     "editor.rulers": [
         100,
     ],
-    "workbench.colorTheme": "Ayu Dark Bordered",
+    "workbench.colorTheme": "GitHub Dark Default",
     "security.workspace.trust.untrustedFiles": "open",
     "git.openRepositoryInParentFolders": "always",
     "window.menuBarVisibility": "toggle",
@@ -20,13 +20,16 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": "active",
     "github.copilot.enable": {
-        "*": false,
+        "*": true,
         "yaml": false,
-        "plaintext": false,
-        "markdown": false,
+        "plaintext": true,
+        "markdown": true,
         "scminput": false
     },
     "explorer.confirmDragAndDrop": false,
     "window.zoomLevel": -1,
     "vim.useCtrlKeys": false,
+    "[python]": {
+        "editor.formatOnType": true
+    },
 }
