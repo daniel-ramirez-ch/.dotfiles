@@ -1,4 +1,5 @@
 {
+    "editor.lineNumbers": "relative",
     "terminal.integrated.scrollback": 100000,
     "editor.rulers": [
         100,
@@ -20,11 +21,12 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": "active",
     "github.copilot.enable": {
-        "*": true,
-        "yaml": false,
+        "*": false,
         "plaintext": true,
         "markdown": true,
-        "scminput": false
+        "scminput": false,
+        "yaml": false,
+        "typst": false
     },
     "explorer.confirmDragAndDrop": false,
     "window.zoomLevel": -1,
@@ -32,4 +34,6 @@
     "[python]": {
         "editor.formatOnType": true
     },
+    // Rust analyzer settings
+    "rust-analyzer.check.command": "clippy",
 }
