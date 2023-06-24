@@ -21,7 +21,7 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": "active",
     "github.copilot.enable": {
-        "*": false,
+        "*": true,
         "plaintext": true,
         "markdown": true,
         "scminput": false,
@@ -36,4 +36,10 @@
     },
     // Rust analyzer settings
     "rust-analyzer.check.command": "clippy",
+    "git.ignoreMissingGitWarning": true,
+    "[nix]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "jnoortheen.nix-ide"
+    },
+    "arduino.useArduinoCli": true,
 }
