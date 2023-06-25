@@ -1,45 +1,102 @@
 {
-    "editor.lineNumbers": "relative",
-    "terminal.integrated.scrollback": 100000,
-    "editor.rulers": [
-        100,
-    ],
-    "workbench.colorTheme": "GitHub Dark Default",
-    "security.workspace.trust.untrustedFiles": "open",
-    "git.openRepositoryInParentFolders": "always",
-    "window.menuBarVisibility": "toggle",
-    "editor.inlineSuggest.enabled": true,
-    "workbench.startupEditor": "none",
     "editor.formatOnSave": true,
-    // Use VictorMono Nerd Font 18 for editor and 16 for terminal
-    "editor.fontFamily": "VictorMono Nerd Font",
     "editor.fontLigatures": true,
-    "editor.fontSize": 18,
-    "terminal.integrated.fontFamily": "VictorMono Nerd Font",
-    "terminal.integrated.fontSize": 16,
-    // Bracket Pair Colorizer
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": "active",
+    "editor.rulers": [
+        100
+    ],
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "editor.fontFamily": "Victor Mono",
+    "editor.lineNumbers": "relative",
+    "editor.inlineSuggest.enabled": true,
+    // 🚀 Vim config 🚀
+    "vim.normalModeKeyBindings": [
+        // run cargo fmt on save
+        {
+            "before": [
+                ":",
+                "w"
+            ],
+            "after": [
+                ":",
+                "w",
+                "!",
+                "c",
+                "a",
+                "r",
+                "g",
+                "o",
+                " ",
+                "f",
+                "m",
+                "t",
+                "<CR>"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "c"
+            ],
+            "commands": [
+                ":q"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "w"
+            ],
+            "commands": [
+                ":w"
+            ]
+        },
+        {
+            "before": [
+                "<S-l>"
+            ],
+            "after": [
+                "g",
+                "t"
+            ]
+        },
+        {
+            "before": [
+                "<S-h>"
+            ],
+            "after": [
+                "g",
+                "T"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "f",
+                "f"
+            ],
+            "after": [
+                "C-p"
+            ]
+        },
+    ],
+    "vim.leader": " ",
+    "vim.highlightedyank.enable": true,
+    "vim.useSystemClipboard": true,
+    "errorLens.fontStyleItalic": true,
+    "workbench.iconTheme": "material-icon-theme",
     "github.copilot.enable": {
         "*": true,
-        "plaintext": true,
-        "markdown": true,
-        "scminput": false,
         "yaml": false,
-        "typst": false
+        "plaintext": true,
+        "markdown": false,
+        "rust": true
     },
-    "explorer.confirmDragAndDrop": false,
-    "window.zoomLevel": -1,
-    "vim.useCtrlKeys": false,
-    "[python]": {
-        "editor.formatOnType": true
+    // 🦀 Rust analyzer 🦀
+    "rust-analyzer.rustfmt.extraArgs": [
+        "+nightly"
+    ],
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
     },
-    // Rust analyzer settings
-    "rust-analyzer.check.command": "clippy",
-    "git.ignoreMissingGitWarning": true,
-    "[nix]": {
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "jnoortheen.nix-ide"
-    },
-    "arduino.useArduinoCli": true,
+    "window.zoomLevel": -1
 }
