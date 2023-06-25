@@ -189,3 +189,5 @@ bar {
         status_command i3status
 }
 
+bindsym $mod+b exec firefox
+bindsym $mod+t exec alacritty
