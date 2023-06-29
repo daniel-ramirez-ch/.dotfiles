@@ -1,102 +1,14 @@
 {
+    "rust-analyzer.checkOnSave.command": "clippy",
     "editor.formatOnSave": true,
-    "editor.fontLigatures": true,
-    "editor.rulers": [
-        100
-    ],
-    "workbench.colorTheme": "Gruvbox Dark Medium",
-    "editor.fontFamily": "Victor Mono",
-    "editor.lineNumbers": "relative",
+    "window.menuBarVisibility": "toggle",
     "editor.inlineSuggest.enabled": true,
-    // 🚀 Vim config 🚀
-    "vim.normalModeKeyBindings": [
-        // run cargo fmt on save
-        {
-            "before": [
-                ":",
-                "w"
-            ],
-            "after": [
-                ":",
-                "w",
-                "!",
-                "c",
-                "a",
-                "r",
-                "g",
-                "o",
-                " ",
-                "f",
-                "m",
-                "t",
-                "<CR>"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "c"
-            ],
-            "commands": [
-                ":q"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "w"
-            ],
-            "commands": [
-                ":w"
-            ]
-        },
-        {
-            "before": [
-                "<S-l>"
-            ],
-            "after": [
-                "g",
-                "t"
-            ]
-        },
-        {
-            "before": [
-                "<S-h>"
-            ],
-            "after": [
-                "g",
-                "T"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "f",
-                "f"
-            ],
-            "after": [
-                "C-p"
-            ]
-        },
-    ],
-    "vim.leader": " ",
+    "vim.useCtrlKeys": false,
+    "editor.fontFamily": "Victor Mono",
+    "editor.fontSize": 18,
+    "editor.fontLigatures": true,
+    "editor.lineNumbers": "relative",
+    "workbench.startupEditor": "none",
     "vim.highlightedyank.enable": true,
     "vim.useSystemClipboard": true,
-    "errorLens.fontStyleItalic": true,
-    "workbench.iconTheme": "material-icon-theme",
-    "github.copilot.enable": {
-        "*": true,
-        "yaml": false,
-        "plaintext": true,
-        "markdown": false,
-        "rust": true
-    },
-    // 🦀 Rust analyzer 🦀
-    "rust-analyzer.rustfmt.extraArgs": [
-        "+nightly"
-    ],
-    "[rust]": {
-        "editor.defaultFormatter": "rust-lang.rust-analyzer"
-    },
-    "window.zoomLevel": -1
 }
