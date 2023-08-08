@@ -20,3 +20,5 @@ augroup highlight_yank
 augroup END
 ]])
 
+vim.api.nvim_set_keymap('n', '<space>w', ':w<CR>', { noremap = true, silent = true })
+
