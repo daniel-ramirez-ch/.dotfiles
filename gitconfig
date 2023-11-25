@@ -1,7 +1,7 @@
 [user]
 	email = hi@danielrachi.com
-	name = Daniel Ramirez Chiquillo
+	name = Daniel Ramirez
 [init]
 	defaultBranch = main
 [pull]
-	rebase = false
+	rebase = true
