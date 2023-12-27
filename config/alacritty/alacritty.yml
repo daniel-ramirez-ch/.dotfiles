@@ -6,7 +6,7 @@ scrolling:
   history: 100000
 
 font:
-  size: 16
+  size: 12
 
 shell:
   program: /usr/bin/tmux 
