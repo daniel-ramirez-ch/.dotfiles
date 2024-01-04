@@ -302,6 +302,14 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 -- nvim-tree mappings
 vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<cr>', {desc = 'Toggle nvim-tree'})
 
+-- save shortcut
+vim.keymap.set('n', '<leader>wf', ':w<cr>', {desc = 'Save file'})
+
+-- buffer helpers
+vim.keymap.set('n', '<leader>bd', ':bd<cr>', {desc = 'Delete buffer'})
+vim.keymap.set('n', '<leader>bn', ':bn<cr>', {desc = 'Next buffer'})
+vim.keymap.set('n', '<leader>bp', ':bp<cr>', {desc = 'previous buffer'})
+
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
