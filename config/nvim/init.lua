@@ -310,6 +310,9 @@ vim.keymap.set('n', '<leader>bd', ':bd<cr>', {desc = 'Delete buffer'})
 vim.keymap.set('n', '<leader>bn', ':bn<cr>', {desc = 'Next buffer'})
 vim.keymap.set('n', '<leader>bp', ':bp<cr>', {desc = 'previous buffer'})
 
+-- close shortcut
+vim.keymap.set('n', '<leader>q', ':q<cr>', {desc = 'Close nvim'})
+
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
