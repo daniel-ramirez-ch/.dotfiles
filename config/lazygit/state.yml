@@ -1,6 +1,7 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/daniel/.dotfiles
+- /home/daniel/code/lighthouse
 - /home/daniel/code/aoc2023_elixir
 startuppopupversion: 5
 customcommandshistory: []
