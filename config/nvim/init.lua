@@ -297,9 +297,9 @@ vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<cr>', {desc = 'Toggle nvim-tre
 vim.keymap.set('n', '<leader>wf', ':w<cr>', {desc = 'Save file'})
 
 -- buffer helpers
-vim.keymap.set('n', '<leader>bd', ':bd<cr>', {desc = 'Delete buffer'})
-vim.keymap.set('n', '<leader>bn', ':bn<cr>', {desc = 'Next buffer'})
-vim.keymap.set('n', '<leader>bp', ':bp<cr>', {desc = 'previous buffer'})
+vim.keymap.set('n', '<A-w>', ':bd<cr>', {desc = 'Delete buffer'})
+vim.keymap.set('n', '<A-l>', ':bn<cr>', {desc = 'Next buffer'})
+vim.keymap.set('n', '<A-h>', ':bp<cr>', {desc = 'previous buffer'})
 
 -- close shortcut
 vim.keymap.set('n', '<leader>q', ':q<cr>', {desc = 'Close nvim'})
