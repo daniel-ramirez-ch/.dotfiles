@@ -190,3 +190,10 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# Set the background.
+exec feh --bg-scale ~/Pictures/epf-hero.jpg
+
+# Don't sleep
+exec xset s off
+exec xset -dpms
