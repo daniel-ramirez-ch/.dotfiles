@@ -116,15 +116,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-. "$HOME/.cargo/env"
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
 fish
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
 export PATH="$PATH:/home/daniel/.foundry/bin"
 
 export PATH="$PATH:/home/daniel/.foundry/bin"
+. "$HOME/.cargo/env"
