@@ -3,5 +3,3 @@
 	name = Daniel Ramirez
 [init]
 	defaultBranch = main
-[pull]
-	rebase = true
