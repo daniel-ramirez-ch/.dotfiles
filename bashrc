@@ -125,3 +125,4 @@ export PATH="$PATH:/home/daniel/.foundry/bin"
 
 export PATH="$PATH:/home/daniel/.foundry/bin"
 . "$HOME/.cargo/env"
+
