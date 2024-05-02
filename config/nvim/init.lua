@@ -20,6 +20,8 @@ vim.opt.rtp:prepend(lazypath)
 
 -- [[ Configure plugins ]]
 require('lazy').setup({
+  -- Daniel's plugins
+  'github/copilot.vim',
   -- NOTE: First, some plugins that don't require any configuration
 
   -- Git related plugins
