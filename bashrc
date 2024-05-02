@@ -1,6 +1,7 @@
 # Aliases
-alias ll='ls -alF'
-alias la='ls -A'
+alias ls='ls --color=auto'
+alias ll='ls -alF --color=auto'
+alias la='ls -A --color=auto'
 
 # Functions
 function gm() {
@@ -9,3 +10,6 @@ function gm() {
   sudo apt autoremove -y
   sudo apt clean
 }
+
+# Promt customization
+export PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
