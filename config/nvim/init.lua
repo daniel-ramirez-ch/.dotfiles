@@ -20,6 +20,7 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   -- Daniel's plugins
   'github/copilot.vim',
+  'pocco81/auto-save.nvim',
   -- NOTE: First, some plugins that don't require any configuration
 
   -- Git related plugins
@@ -203,13 +204,6 @@ require('lazy').setup({
     },
     build = ':TSUpdate',
   },
-
-  {
-    'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons',
-    config = function ()
-      require("bufferline").setup {}
-    end
-  },
   {
     "nvim-tree/nvim-tree.lua",
     version = "*",
@@ -289,14 +283,6 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 
 -- nvim-tree mappings
 vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<cr>', {desc = 'Toggle nvim-tree'})
-
--- save shortcut
-vim.keymap.set('n', '<leader>wf', ':w<cr>', {desc = 'Save file'})
-
--- buffer helpers
-vim.keymap.set('n', '<A-w>', ':bd<cr>', {desc = 'Delete buffer'})
-vim.keymap.set('n', '<A-l>', ':bn<cr>', {desc = 'Next buffer'})
-vim.keymap.set('n', '<A-h>', ':bp<cr>', {desc = 'previous buffer'})
 
 -- close shortcut
 vim.keymap.set('n', '<leader>q', ':q<cr>', {desc = 'Close nvim'})
