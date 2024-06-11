@@ -83,6 +83,11 @@ require('lazy').setup({
       -- Adds a number of user-friendly snippets
       'rafamadriz/friendly-snippets',
     },
+    opts = {
+      enabled = function ()
+        return (vim.bo.ft ~= "markdown")
+      end,
+    },
   },
 
   -- Useful plugin to show you pending keybinds.
@@ -304,6 +309,12 @@ vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<cr>', {desc = 'Toggle nvim-tre
 
 -- close shortcut
 vim.keymap.set('n', '<leader>q', ':q<cr>', {desc = 'Close nvim'})
+
+-- delete buffer
+vim.keymap.set('n', '<leader>d', ':bd<cr>', {desc = 'Delete buffer'})
+
+-- go to last buffer
+vim.keymap.set('n', '<leader>l', ':b#<cr>', {desc = 'Go to last buffer'})
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
