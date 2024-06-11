@@ -11,6 +11,7 @@ function gm() {
   sudo apt clean
   dropbox update
   rustup update
+  dropbox start
 }
 
 take ()
