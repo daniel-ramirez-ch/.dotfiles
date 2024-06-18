@@ -19,6 +19,8 @@ take ()
     mkdir -p -- "$1" &&
        cd -P -- "$1"
 }
+
 # Promt customization
 export PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
 . "$HOME/.cargo/env"
+
