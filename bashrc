@@ -10,9 +10,7 @@ function gm() {
   sudo apt full-upgrade -y
   sudo apt autoremove -y
   sudo apt clean
-  dropbox update
   rustup update
-  dropbox start
 }
 
 take ()
