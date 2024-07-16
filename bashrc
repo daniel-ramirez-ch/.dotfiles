@@ -5,6 +5,7 @@ alias la='ls -A --color=auto'
 alias code='nvim ~/Code'
 
 # Functions
+
 # Update and upgrade
 function gm() {
   sudo apt update
@@ -31,3 +32,6 @@ export PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
 . "$HOME/.cargo/env"
 
 # asdf
+. "$HOME/.asdf/asdf.sh"
+. "$HOME/.asdf/completions/asdf.bash"
+
