@@ -3,6 +3,7 @@ alias ls='ls --color=auto'
 alias ll='ls -alF --color=auto'
 alias la='ls -A --color=auto'
 alias code='nvim ~/Code'
+alias lg='lazygit'
 
 # Functions
 
