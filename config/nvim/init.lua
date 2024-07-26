@@ -19,7 +19,6 @@ vim.opt.rtp:prepend(lazypath)
 -- [[ Configure plugins ]]
 require('lazy').setup({
   -- Daniel's plugins
-  'github/copilot.vim',
   'pocco81/auto-save.nvim',
   {
     "kdheepak/lazygit.nvim",
