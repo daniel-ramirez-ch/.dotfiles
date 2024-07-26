@@ -20,6 +20,7 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   -- Daniel's plugins
   'pocco81/auto-save.nvim',
+  { 'echasnovski/mini.nvim', version = false },
   {
     "kdheepak/lazygit.nvim",
     cmd = {
