@@ -14,6 +14,7 @@ function gm() {
   sudo apt autoremove -y
   sudo apt clean
   rustup update
+  asdf plugin update --all
 }
 
 # Create a new directory and enter it
